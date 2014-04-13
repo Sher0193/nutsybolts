@@ -1,0 +1,209 @@
+.game_container_top {
+	position: absolute;
+	left: 100px; right: 100px;
+	top: 50px; bottom: 150px;
+	padding: 0px;
+	text-align:center;
+	display: inline;
+}
+
+.game_container_bottom {
+	position: absolute;
+	left: 100px; right: 100px;
+	bottom: 5px; height: 150px;
+	padding: 0px;
+	text-align:center;
+	display: inline;
+}
+
+.game_container_bottom .table_container .apple_table .table_body {
+	height: 100px;
+}
+
+.table_container {
+	display:block;
+}
+
+.table_container#chatareacontainer {
+	width: 70%;
+	float: left;
+}
+
+.table_container#playerlistcontainer {
+	width: 28%;
+	float: right;
+}
+
+.table_container#handcontainer {
+	width: 538px;
+	float: left;
+	height: 150px;
+}
+
+.table_container#judgecontainer {
+	float: right;
+	width: 30%;
+}
+
+.table_container .apple_table .apple_body {
+	height: 100%;
+}
+
+#chatwindow {
+	width: 100%;
+	overflow: scroll;
+	text-align: left;
+	font-size: 8pt;
+}
+
+.hand_heading, .judge_heading {
+	font-size: 10pt;
+	text-align:center;
+	display: block;
+	padding-bottom: 5px;
+}
+
+#hand_greencard, #judge_greencard, #judge_name {
+	font-size: 10pt;
+	font-weight: bold;
+	display: inline;
+}
+
+#hand_cards { height: 100px; }
+
+#hand_cards .hand_card {
+	width: 70px;
+	height: 100px;
+	margin: 0px 2px;
+	display: block;
+	float: left;
+}
+
+#hand_cards.hand_cards .hand_card {
+	background: url('images/card_bg.png') no-repeat;
+	cursor: pointer;
+}
+
+#hand_cards.hand_played .hand_card {
+	background: url('images/card_bg_fade.png') no-repeat;
+}
+
+#hand_cards.hand_cards .hand_card:hover {
+	background: url('images/card_bg_hl.png') no-repeat;
+}
+
+.hand_card .card_caption { 
+	padding-top: 68px;
+	font-size: 7pt;
+	text-align:center;
+}
+
+#playerlist {
+	border: solid 1px #1bcc1b;
+	overflow: scroll;
+	margin-bottom: 4px;
+}
+
+.player1, .player2 {
+	font-size: 9pt;
+	height: 20px;
+	min-height: 20px;
+}
+
+.player1 {
+	background: #e2ffe2;
+}
+
+.player2 {
+	background: #bef2be;
+}
+
+.player1#you {
+	background: #ffe2e2;
+	border-top: 1px dashed #ff2121;
+	border-bottom: 1px dashed #ff2121;
+}
+
+.player2#you {
+	background: #f2bebe;
+	border-top: 1px dashed #ff2121;
+	border-bottom: 1px dashed #ff2121;
+}
+
+.playericon {
+	width: 24px;
+	float: left;
+	padding-top: 2px;
+}
+
+.playername {
+	width: 80px;
+	float: left;
+	clear: none;
+	overflow: hidden;
+}
+
+.playerscore {
+	width: 25px;
+	float: left;
+}
+
+.playername, .playerscore { padding-top: 5px; text-align: left; }
+
+.playermute {
+	width:19px;
+	float:left;
+	padding-top: 3px;
+	cursor: pointer;
+}
+
+#away_message {
+	color: #8c1c1c;
+	font-weight: bold;
+	font-size: 8pt;
+}
+
+.text_footer {
+	background: url('images/textbottom_slice.png') repeat-x;
+	height: 29px;
+	clear: both;
+}
+
+.text_left {
+	height: 29px;
+	width: 28px;
+	background: url('images/textcorner.png');
+	float: left;
+}
+
+.text_right {
+	height: 29px;
+	width: 55px;
+	float: right;
+}
+
+.messageuser {
+	display: inline;
+	font-weight: bold;
+}
+
+.message_container {
+	padding-left:28px;
+	padding-right:55px;
+}
+
+.message_input {
+	width:100%;
+	border:0px;
+	margin-top:5px;
+}
+
+div#card_description {
+	font-style:italic;
+	font-size: 8pt;
+	line-height: 15px;
+	min-height: 15px;
+	margin-top: 3px;
+	color: #552424;
+	clear: both;
+}

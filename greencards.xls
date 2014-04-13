@@ -1,0 +1,1046 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <LastAuthor>Mark Goetz</LastAuthor>
+  <LastSaved>2008-07-27T19:15:10Z</LastSaved>
+  <Version>11.5606</Version>
+ </DocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>10005</WindowHeight>
+  <WindowWidth>10005</WindowWidth>
+  <WindowTopX>120</WindowTopX>
+  <WindowTopY>135</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Table1">
+  <Table ss:ExpandedColumnCount="2" ss:ExpandedRowCount="249" x:FullColumns="1"
+   x:FullRows="1">
+   <Column ss:Width="72.75"/>
+   <Row>
+    <Cell><Data ss:Type="String">Absurd</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Addictive</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Adorable</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Aged</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">American</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Ancient</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Animated</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Annoying</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Appetizing</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Arrogant</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Awesome</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Awkward</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Believable</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Bogus</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Boisterous</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Bold</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Boring</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Bright</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Brilliant</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Busy</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Calm</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Casual</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Charismatic</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Charming</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Cheesy</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Chewy</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Chunky</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Classic</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Clean</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Clueless</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Cold</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Colorful</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Comfortable</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Comical</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Complicated</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Confused</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Cool</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Corrupt</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Cosmic</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Cosmopolitan</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Courageous</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Cowardly</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Cranky</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Crazed</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Crazy</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Creative</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Creepy</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Cruel</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Cuddly</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Cute</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Dainty</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Dangerous</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Dead</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Deadly</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Delicate</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Delicious</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Delightful</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Demanding</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Depressing</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Desperate</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Dignified</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Dirty</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Distinguished</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Disturbing</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Dramatic</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Dreamy</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Dull</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Dysfunctional</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Earthy</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Easy</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Eccentric</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Elitist</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Emotional</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Eternal</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">European</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Exciting</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Exhausting</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Expensive</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Explosive</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Exquisite</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Extreme</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Fabulous</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Fake</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Fancy</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Fantastic</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Feminine</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Filthy</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Flirtatious</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Foreign</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Fragrant</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Frazzled</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Fresh</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Friendly</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Frightening</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Frivolous</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Funky</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Funny</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Furious</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Fuzzy</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Glamorous</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Glitzy</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Global</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Glorious</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Goody-Goody</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Graceful</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Handsome</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Hardworking</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Harmful</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Haunting</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Healthy</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Heartless</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Hilarious</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Honorable</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Hopeless</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Horrifying</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Hostile</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Hot</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Idiotic</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Important</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Industrious</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Influential</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Innocent</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Insane</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Inspirational</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Insulting</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Intelligent</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Intense</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Irresistible</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Irritating</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Juicy</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Lazy</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Legendary</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Loud</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Lovable</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Lucky</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Luscious</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Luxurious</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Magical</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Manly</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Masculine</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Meek</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Melodramatic</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Mischievous</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Miserable</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Misunderstood</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Mysterious</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Mystical</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Naive</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Nasty</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Natural</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Neat</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Neglected</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Nerdy</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Normal</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Obnoxious</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Odd</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Offensive</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Ordinary</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Organic</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Outrageous</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Overwhelming</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Painful</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Pathetic</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Patriotic</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Peaceful</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Perfect</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Philosophical</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Phony</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Playful</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Popular</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Powerful</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Primitive</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Principled</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Profound</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Puffy</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Pure</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Quiet</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Radiant</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Radical</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Rare</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Realistic</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Refined</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Refreshing</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Relaxing</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Repulsive</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Responsible</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Revolutionary</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Rich</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Ridiculous</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Risky</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Rough</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Saintly</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Sappy</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Scary</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Scenic</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Selfish</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Senseless</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Sensitive</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Sensual</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Sexy</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Shallow</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Sharp</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Shiny</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Shocking</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Shy</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Silly</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Smart</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Smelly</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Smooth</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Snappy</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Soft</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Speedy</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Spicy</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Spiritual</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Spooky</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Spunky</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Squeaky Clean</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Stereotyped</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Stunning</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Sultry</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Sweet</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Swift</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Talented</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Tame</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Technological</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Temperamental</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Timeless</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Touchy-Feely</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Tough</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Trustworthy</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Twisted</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Unbelievable</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Unforgettable</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Unhealthy</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Unnatural</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Unreal</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Unscrupulous</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Unusual</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Useless</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Violent</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Virtuous</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Visionary</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Weird</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Wicked</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Wild</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Witty</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Woebegone</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Worldly</Data></Cell>
+    <Cell><Data ss:Type="String">remove</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Zany</Data></Cell>
+    <Cell><Data ss:Type="String">keep</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Selected/>
+   <TopRowVisible>218</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>239</ActiveRow>
+     <ActiveCol>6</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

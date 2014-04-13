@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Dangerous Apples</title>
+	<meta http-equiv="content-type"
+		content="text/html;charset=utf-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<link href="a2a_beta2.css" type="text/css" rel="stylesheet" />
+	<link href="a2a_index_beta2.css" type="text/css" rel="stylesheet" />
+	<script src="ajax_lib.js" type="text/javascript"></script>
+	<script src="a2a_game.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<div class="indexlayout-leftbar">
+		<div class="linkblock">
+			<ul>
+				<li class="linkblock-link"><a href="#">About</a></li>
+				<li class="linkblock-link"><a href="#">How to Play</a></li>
+				<li class="linkblock-link"><a href="#">FAQ</a></li>
+				<li class="linkblock-link"><a href="#">Contact</a></li>
+			</ul>
+		</div>	
+	</div>
+	<div class="indexlayout-center">
+		<div style="text-align:center"><img src="/images/a2a_logo_beta.png" /></div>
+		
+		<div class="helpbar">
+			Welcome to <b>Dangerous Apples!</b>
+		</div>
+		
+		<div class="indexlayout-interface">
+			<div class="error_message">
+				Error message
+				<input type="button" value="Close" onclick="$('.error_message').slideUp('slow');" />
+			</div>
+			
+			<div class="block">
+				<div class="blockheader">Join an existing game</div>
+				<form action="/join-game.php" style="padding: 5px;" method="post" name="joinform" onsubmit="return joinValidate();">
+					<div class="formfield">
+						<label for="join_name">Your name</label>
+						<input type="text" class="text" id="join_name" name="name" size="20" maxlength="20" onfocus="this.className='text';" />
+						<div class="invalid_text" id="name_message">Please enter your name.</div>
+					</div>
+			
+					<div class="formfield">
+						<input type="hidden" name="roomid" id="hidden_roomid" />
+
+						<label for="roomid">
+							Choose a room
+						</label>
+						<div class="select_div" id="roomid" onchange="getPlayerList();" onfocus="$(this).removeClass('invalid');">
+						
+						</div>
+						<div class="roominfo">
+							<div class="roominfoheader">Room Info</div>
+							<div id="roominfo">
+								<div class="message">Please choose a room.</div>
+							</div>
+							<div class="roominfoheader">Player List</div>
+							<div id="playerlist">
+								<div class="message">Please choose a room.</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="formfield" id="password">			
+						<label for="password">Password</label>
+						<input type="password" class="text" name="password" size="10" />
+						<div class="invalid_text" id="password_message" style="display: none;">
+							This is a private room.  Please enter the password to join.
+						</div>
+					</div>
+					<div class="buttonfield">
+						<input type="image" name="join" value="Join" src="images/join_button.png" onmouseover="this.src='/images/join_button_hl.png';" width="77" height="30" onmouseout="this.src='/images/join_button.png';" onclick="this.disabled=true;"/>
+					</div>
+					<div style="clear: both;"></div>
+				</form>
+			</div>
+			<div class="block">
+				<div class="blockheader">Create a new game</div>
+				Create button
+			</div>
+		</div>
+	</div>
+	<div class="indexlayout-rightbar">
+		Ads go here
+	</div>
+</body>
+</html>

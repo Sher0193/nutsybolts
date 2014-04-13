@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Dangerous Apples</title>
+	<meta http-equiv="content-type"
+		content="text/html;charset=utf-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<link href="a2a_beta2_notable.css" type="text/css" rel="stylesheet" />
+	<link href="a2a_game_beta2_notable.css" type="text/css" rel="stylesheet" />
+	<script src="ajax_lib.js" type="text/javascript"></script>
+	<script src="a2a_game.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+		var highlight_color = new Array(102, 204, 204);
+		var STEPS = 20;
+
+		function highlight(rowid) {
+			var row = document.getElementById('row' + rowid);
+			var current_color;
+
+			if (row.currentStyle) {
+				var current_color_string = row.currentStyle['backgroundColor'];
+				var hex_string_rx = /([0-9a-f][0-9a-f])([0-9a-f][0-9a-f])([0-9a-f][0-9a-f])/;
+				current_color = current_color_string.match(hex_string_rx);
+				current_color.shift();
+				for (var i = 0; i <= 2; i++) {
+					current_color[i] = parseInt(current_color[i],16);
+				}
+			}
+			else {
+				var current_color_rgb = window.getComputedStyle(row, '').getPropertyValue('background-color');
+				current_color = current_color_rgb.match(/([0-9]+)/g);
+			}
+			row.style.backgroundColor = arrayToRGB(highlight_color);
+
+			setTimeout('delight(' + rowid + ',' + highlight_color.join(',') + ',' + current_color.join(',') + ');', 2000);
+		}
+
+		function arrayToRGB(color_array) {
+			if (color_array.length != 3) return false;
+			var rgb_string = '#';
+
+			for (var i = 0; i <= 2; i++) {
+				rgb_string = rgb_string + parseInt(color_array[i]).toString(16);
+			}
+			return rgb_string;
+		}
+
+		function delight(rowid, current_r, current_g, current_b, r, g, b) {
+			var row = document.getElementById('row' + rowid);
+
+			var delta_r = (r - highlight_color[0]) / STEPS;
+			var delta_g = (g - highlight_color[1]) / STEPS;
+			var delta_b = (b - highlight_color[2]) / STEPS;
+
+			var new_r = current_r + delta_r;
+			var new_g = current_g + delta_g;
+			var new_b = current_b + delta_b;
+
+			row.style.backgroundColor = arrayToRGB(new Array(new_r,new_g,new_b));
+
+			if (parseInt(new_r + .5) != r ||
+				parseInt(new_g + .5) != g ||
+				parseInt(new_b + .5) != b)
+			setTimeout('delight(' + rowid + ',' + new_r + ',' + new_g + ',' + new_b +',' + r + ',' + g + ',' + b + ');', 50);
+		}
+
+	</script>
+	
+</head>
+<body onload="document.message.messagebar.focus();" onclick="document.message.messagebar.focus();">
+	<div class="layout-wrapper">
+		<div class="layout-leftbar">
+		
+		
+			<div class="box-logo">
+				<div class="linkblock">
+					<ul>
+						<li class="linkblock-link"><a href="#">About</a></li>
+						<li class="linkblock-link"><a href="#">How to Play</a></li>
+						<li class="linkblock-link"><a href="#">FAQ</a></li>
+						<li class="linkblock-link"><a href="#">Contact</a></li>
+					</ul>
+				</div>			
+				<img src="images/a2a_logo_beta.png" width="285" height="70" />
+			</div>
+			
+			<div class="helpbar">
+				This round's adjective: <a id="greencard" href="http://en.wiktionary.org/wiki/hungry" target="_blank">Hungry</a><br/>
+				<b id="judgename">Mike</b> is the judge this round.  Play the best red card!
+			</div>
+			
+			<div class="block">
+				<div class="blockheader">Table</div>
+				<div id="table_cards" class="disabled">
+					<div class="card_container">
+						<a class="hand_card" href="javascript:playCard(this);"><div class="card_caption">Swamp Gas</div></a>
+						<div><a href="http://en.wikipedia.org/wiki/Swamp Gas" target="_blank">look it up</a></div>
+						<div class="name_container">Name</div>
+					</div>
+					<div class="card_container">
+						<a class="hand_card" href="javascript:playCard(this);"><div class="card_caption">Swamp Gas</div></a>
+						<div><a href="http://en.wikipedia.org/wiki/Swamp Gas" target="_blank">look it up</a></div>
+						<div class="name_container">Name</div>
+					</div>
+					<div class="card_container">
+						<a class="hand_card" href="javascript:playCard(this);"><div class="card_caption">Swamp Gas</div></a>
+						<div><a href="http://en.wikipedia.org/wiki/Swamp Gas" target="_blank">look it up</a></div>
+						<div class="name_container">Name</div>
+					</div>
+					<div class="card_container">
+						<a class="hand_card" href="javascript:playCard(this);"><div class="card_caption">Swamp Gas</div></a>
+						<div><a href="http://en.wikipedia.org/wiki/Swamp Gas" target="_blank">look it up</a></div>
+						<div class="name_container">Name</div>
+					</div>
+					<div class="card_container">
+						<a class="hand_card" href="javascript:playCard(this);"><div class="card_caption">Swamp Gas</div></a>
+						<div><a href="http://en.wikipedia.org/wiki/Swamp Gas" target="_blank">look it up</a></div>
+						<div class="name_container">Name</div>
+					</div>
+					<div class="card_container">
+						<a class="hand_card" href="javascript:playCard(this);"><div class="card_caption">Swamp Gas</div></a>
+						<div><a href="http://en.wikipedia.org/wiki/Swamp Gas" target="_blank">look it up</a></div>
+						<div class="name_container">Name</div>
+					</div>
+					<div class="card_container">
+						<a class="hand_card" href="javascript:playCard(this);"><div class="card_caption">Swamp Gas</div></a>
+						<div><a href="http://en.wikipedia.org/wiki/Swamp Gas" target="_blank">look it up</a></div>
+						<div class="name_container">Name</div>
+					</div>
+					<div class="card_container" id="winner">
+						<a class="hand_card" href="javascript:playCard(this);"><div class="card_caption">Swamp Gas</div></a>
+						<div><a href="http://en.wikipedia.org/wiki/Swamp Gas" target="_blank">look it up</a></div>
+						<div class="name_container">Name</div>
+					</div>
+					<div class="card_container">
+						<a class="hand_card" href="javascript:playCard(this);"><div class="card_caption">Swamp Gas</div></a>
+						<div><a href="http://en.wikipedia.org/wiki/Swamp Gas" target="_blank">look it up</a></div>
+						<div class="name_container">Name</div>
+					</div>
+					<div class="card_container">
+						<a class="hand_card" href="javascript:playCard(this);"><div class="card_caption">Swamp Gas</div></a>
+						<div><a href="http://en.wikipedia.org/wiki/Swamp Gas" target="_blank">look it up</a></div>
+						<div class="name_container">Name</div>
+					</div>
+					<div class="card_container">
+						<a class="hand_card" href="javascript:playCard(this);"><div class="card_caption">Swamp Gas</div></a>
+						<div><a href="http://en.wikipedia.org/wiki/Swamp Gas" target="_blank">look it up</a></div>
+						<div class="name_container">Name</div>
+					</div>
+				</div>
+				<div style="clear: both;">&nbsp;</div>				
+			</div>
+
+			<div class="block">
+				<div class="blockheader">Your Hand</div>
+				<div class="enabled" id="hand_cards">
+					<div class="card_container">
+						<a class="hand_card" href="javascript:playCard(this);"><div class="card_caption">Swamp Gas</div></a>
+						<div><a href="http://en.wikipedia.org/wiki/Swamp Gas" target="_blank">look it up</a></div>
+					</div>
+					<div class="card_container">
+						<a class="hand_card" href="javascript:playCard(this);"><div class="card_caption">Swamp Gas</div></a>
+						<div><a href="http://en.wikipedia.org/wiki/Swamp Gas" target="_blank">look it up</a></div>
+					</div>
+					<div class="card_container">
+						<a class="hand_card" href="javascript:playCard(this);"><div class="card_caption">Swamp Gas</div></a>
+						<div><a href="http://en.wikipedia.org/wiki/Swamp Gas" target="_blank">look it up</a></div>
+					</div>
+					<div class="card_container">
+						<a class="hand_card" href="javascript:playCard(this);"><div class="card_caption">Swamp Gas</div></a>
+						<div><a href="http://en.wikipedia.org/wiki/Swamp Gas" target="_blank">look it up</a></div>
+					</div>
+					<div class="card_container">
+						<a class="hand_card" href="javascript:playCard(this);"><div class="card_caption">Swamp Gas</div></a>
+						<div><a href="http://en.wikipedia.org/wiki/Swamp Gas" target="_blank">look it up</a></div>
+					</div>
+					<div class="card_container">
+						<a class="hand_card" href="javascript:playCard(this);"><div class="card_caption">Swamp Gas</div></a>
+						<div><a href="http://en.wikipedia.org/wiki/Swamp Gas" target="_blank">look it up</a></div>
+					</div>
+					<div class="card_container">
+						<a class="hand_card" href="javascript:playCard(this);"><div class="card_caption">Swamp Gas</div></a>
+						<div><a href="http://en.wikipedia.org/wiki/Swamp Gas" target="_blank">look it up</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="layout-rightbar">
+			<div class="block">
+				<div class="blockheader">Chat Area</div>
+				<div id="chatwindow">
+					blah blah blah blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah
+					blah blah blah blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah
+					blah blah blah blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah
+					blah blah blah blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah
+					blah blah blah blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah
+					blah blah blah blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah
+					blah blah blah blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah
+					blah blah blah blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah
+				</div>
+				<form name="message" onsubmit="return postMessage();" style="margin: 0px; padding:0px;">
+					<table width="100%" cellspacing="0" cellpadding="0">
+					<tr>
+						<td width="100%"><input type="text" name="messagebar" class="messagebar" /></td>
+						<td width="0%"><input type="button" name="send" value="send" style="font-size:8pt;"/></td>
+					</tr>
+					</table>
+				</form>
+			</div>
+			
+			<div class="block">
+				<div class="blockheader">Player List</div>
+				<table cellspacing="0" cellpadding="1" width="100%">
+					<tr class="playerlistheader">
+						<td>Status</td><td>Name</td><td>Score</td><td>Light</td>
+					</tr>
+					<tr class="player1" id="row1">
+						<td></td>
+						<td width="70%">Bob</td>
+						<td>0</td>
+						<td><input type="button" onclick="highlight(1);" /></td>
+					</tr>
+					<tr class="player2" id="row2">
+						<td></td>
+						<td>Rick</td>
+						<td>0</td>
+						<td><input type="button" onclick="highlight(2);" /></td>
+					</tr>
+					<tr class="player1" id="row3">
+						<td align="right">judge <img src="images/gavel_small.png" height="15" width="15"/></td>
+						<td>Mike</td>
+						<td>0</td>
+						<td><input type="button" onclick="highlight(3);" /></td>
+					</tr>
+					<tr class="player2" id="row4">
+						<td></td>
+						<td>Mario</td>
+						<td>0</td>
+						<td><input type="button" onclick="highlight(4);" /></td>
+					</tr>
+					<tr class="player1" id="row5">
+						<td></td>
+						<td>Bob</td>
+						<td>0</td>
+						<td><input type="button" onclick="highlight(5);" /></td>
+					</tr>
+					<tr class="player2" id="row6">
+						<td></td>
+						<td>Rick</td>
+						<td>0</td>
+						<td><input type="button" onclick="highlight(6);" /></td>
+					</tr>
+					<tr class="player1" id="row7">
+						<td></td>
+						<td>Mike</td>
+						<td>0</td>
+						<td><input type="button" onclick="highlight(7);" /></td>
+					</tr>
+					<tr class="player2" id="row8">
+						<td></td>
+						<td>Mario</td>
+						<td>0</td>
+						<td><input type="button" onclick="highlight(8);" /></td>
+					</tr>
+					<tr class="player1" id="row9">
+						<td></td>
+						<td>Bob</td>
+						<td>0</td>
+						<td><input type="button" onclick="highlight(9);" /></td>
+					</tr>
+					<tr class="player2" id="row10">
+						<td></td>
+						<td>Rick</td>
+						<td>0</td>
+						<td><input type="button" onclick="highlight(10);" /></td>
+					</tr>
+					<tr class="player1" id="row11">
+						<td></td>
+						<td>Mike</td>
+						<td>0</td>
+						<td><input type="button" onclick="highlight(11);" /></td>
+					</tr>
+					<tr class="player2" id="row12">
+						<td></td>
+						<td>Mario</td>
+						<td>0</td>
+						<td><input type="button" onclick="highlight(12);" /></td>
+					</tr>
+				</table>
+			</div>
+			<div class="block">
+				<div class="blockheader">Round History</div>
+				<table width="100%" cellspacing="0" cellpadding="0">
+					<tr class="playerlistheader">
+						<td>Round</td><td>Winner</td><td>Cards</td>
+					</tr>
+					<tr class="player1">
+						<td>7</td>
+						<td>Player name</td>
+						<td><span style="color:#050;font-weight:bold;">Dangerous</span> <span style="color:#b00;font-weight:bold;">Apples</span> </td>
+					</tr>
+					<tr class="player2">
+						<td>6</td>
+						<td>Player name</td>
+						<td><span style="color:#050;font-weight:bold;">Dangerous</span> <span style="color:#b00;font-weight:bold;">Apples</span> </td>
+					</tr>
+					<tr class="player1">
+						<td>5</td>
+						<td>Player name</td>
+						<td><span style="color:#050;font-weight:bold;">Dangerous</span> <span style="color:#b00;font-weight:bold;">Apples</span> </td>
+					</tr>
+					<tr class="player2">
+						<td>4</td>
+						<td>Player name</td>
+						<td><span style="color:#050;font-weight:bold;">Dangerous</span> <span style="color:#b00;font-weight:bold;">Apples</span> </td>
+					</tr>
+					<tr class="player1">
+						<td>3</td>
+						<td>Player name</td>
+						<td><span style="color:#050;font-weight:bold;">Dangerous</span> <span style="color:#b00;font-weight:bold;">Apples</span> </td>
+					</tr>
+
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

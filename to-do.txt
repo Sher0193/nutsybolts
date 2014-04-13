@@ -1,0 +1,25 @@
+beta 1
+-Skip dropped players
+-Add "about" page
+
+Future:
+-Move player status closer to table?
+-full play history?
+-People can join or leave
+	-Use game log table
+-Play as long as you want
+-Close player ID hole in judge request
+-Away status (?)
+-Mute / Ignore
+-Remove cards from consideration
+-Minigame!
+-Your messages / cards show up automatically without delay
+-Facebook application - invite your friends
+-New decks!
+	-Change cards dbtables to use names instead of IDs
+-Drag cards to table (?)
+-Combine landing and game pages ?
+-Re-do join room screen
+-Flash/Flex app?
+	-homepage must use web service to send people to landing page
+	-landing page and game page should be the same

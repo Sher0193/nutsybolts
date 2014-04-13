@@ -1,0 +1,329 @@
+.game-bar {
+	/*position: relative;*/
+}
+
+.game-leftbar {
+	float: left;
+	width: 560px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.game-rightbar {
+	padding: 0px;
+	margin: 0px;
+	margin-left: 560px;
+	clear: none;
+}
+
+/* The link to define an adjective */
+.helpbar a {
+	font-weight: bold;
+	font-size: 10pt;
+	color: #0066b3;
+}
+.helpbar a:hover {
+	color: #0088ef;
+}
+
+.game-message {
+	background: #ffedd4;
+	font-size: 10pt;
+	padding: 2px;
+	display: none;
+}
+
+.game-message a {
+	font-weight: bold;
+	font-size: 10pt;
+	color: #0066b3;
+}
+
+.game-message a:hover {
+	color: #0088ef;
+}
+
+/* The window where chat messages appear */
+#chatwindow {
+	height: 18em;
+	overflow: auto;
+	font-size:8pt;
+	border-bottom: 1px solid #a29a9a;
+	text-align: left;
+	background: white;
+	word-wrap: break-word;
+}
+
+/* The message bar for sending new chat messages */
+input.messagebar {
+	border: 0px;
+	font-size: 8pt;
+}
+
+/* The heading for each chat message indicating who it's from */
+.messageuser {
+	display: inline;
+	font-weight: bold;
+}
+
+/* The headings for the player list */
+.playerlistheader, .historyheader {
+	font-size: 8pt;
+	color: #fff;
+	background: #00487d;
+	font-weight: bold;
+	padding: 2px;
+	text-align: center;
+}
+
+/* Alternating rows for the player list */
+.player1, .player2, .player1you, .player2you, .history1, .history2 {
+	font-size: 8pt; min-height: 22px; height: 22px;
+}
+.player1, .history1 {
+	background: #bfe4ff;
+}
+.player2, .history2 {
+	background: #E3F3FF;
+}
+
+/* The special color indicating which player you are in the player list */
+.player1you {
+	background: #007BD5;
+}
+.player2you {
+	background: #007BD5;
+}
+
+.idle {
+	font-style: italic;
+	color: #5C656C;
+}
+
+#message-autoscroll {
+	font-style: italic;
+	color: #5c656c;
+	font-size: 8pt;
+	padding-bottom: 2px;
+}
+
+.skipped td {
+	text-decoration: line-through;
+}
+
+.history_red {
+	color: #ba5d00;
+	font-weight: bold;
+}
+
+.history_green {
+	color: #0066b3;
+	font-weight: bold;
+}
+
+/* background and layout for Table */
+.table_bg {
+ 	background: url('images/table_bg.png');	
+	clear: both;
+	margin: 10px;
+	padding-top: 10px;
+}
+
+/* background and layout for Your Hand */
+.hand_bg {
+	background: url('images/hands_bg.png') 50% 35px no-repeat;
+	clear: both;
+	margin: 10px;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+/* Settings for both the Hand and Table areas */
+#hand_cards, #table_cards { height: 108px; margin: 1px; padding-top: 2px; }
+
+/* Help text for the landing page */
+#hand_cards .help, #table_cards .help {
+	font-size: 9pt;
+	font-style: italic;
+	text-align: center;
+	padding: 50px 0px;
+}
+
+#hand_cards .help {
+	color: black;	
+}
+
+#table_cards .help {
+	color: white;
+}
+
+/** overrides for block layout **/
+.block .body {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.block .bottom {
+	height: 18px;
+	background-position: 22% 100%;
+}
+#invitebox.block .bottom {
+	height: 64px;
+}
+
+/* The invisible div with both the card and its "look it up" link */
+.card_container {
+	width: 74px;
+	height: 108px;
+	float: left;
+	padding: 0px 1px;
+	display: block;
+	text-align: center;
+}
+
+/* The table should be slightly taller because of the "winner name" area */
+#table_cards .card_container, #table_cards {
+	min-height: 122px;
+}
+
+#table_cards .winner {
+	background: #ffc080;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* look it up link */
+.card_container a {
+	font-size: 8pt;
+	margin: 2px;
+	color: #0066b3;
+}
+
+.lookitup_container a {
+	color: #00487D;
+}
+
+.lookitup_container a:hover {
+	color: #0073CA;
+}
+
+.winner a {
+	color: #ffffff;
+}
+
+/* The card graphic */
+a.hand_card {
+	width: 74px;
+	height: 90px;
+	display: block;
+	text-decoration: none;
+	color: white;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Disable coloring on the card caption */
+a.hand_card:hover {
+	color: white;
+}
+
+/* The active card graphic */
+.enabled a.hand_card {
+	background: url('images/card_bg.png') no-repeat;
+}
+.enabled a.hand_card:hover {
+	background: url('images/card_bg_hl.png') no-repeat;
+}
+
+/* The disabled card graphic */
+.disabled a.hand_card, .disabled a.hand_card:hover {
+	background: url('images/card_bg_fade.png') no-repeat;
+	cursor: default;
+}
+
+.winner a.hand_card {
+	background: url('images/card_bg_winner.png') no-repeat;
+}
+
+/* The title of the card */
+.hand_card .card_caption {
+	padding-top: 35px;
+	font-size: 7pt;
+	text-align:center;
+	margin: 0px 8px;
+	line-height: 10pt;
+}
+
+.name_container {
+	font-size: 7pt;
+}
+
+td.playericon {
+	height: 24px;
+	text-align: right;
+}
+
+td.playername {
+	height: 24px;	
+	overflow: hidden;
+	text-align: left;
+}
+
+td.playerscore {
+	height: 24px;
+	text-align: center;
+}
+
+#playervote-idleplayers, #playervote-judgename, #idlevote-yourvote, #judgevote-judgename, #skipjudge-judgename {
+	font-weight: bold;
+}
+
+.top_info_bar {
+	display: inline-block;
+	width: 32%;
+	background: no-repeat;
+	padding-top: 32px;
+	font-size: 11pt;
+	text-align: left;
+	margin: 0px;
+}
+
+#round_text {
+	background-image: url('/images/round_text.png');
+}
+
+#judge_name {
+	background-image: url('/images/judge_text.png');
+}
+
+#greencard {
+	background-image: url('/images/adjective_text.png');
+}
+
+.x-button {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+
+.header_big {
+	font: 37pt Screwball,Trebuchet MS, sans-serif;
+	text-align: center;
+}
+
+.header_small {
+	font: 22pt Screwball, Trebuchet MS, sans-serif;
+	text-align: center;
+}
+
+#gameover {
+	display: none;
+	margin: 2em;
+}
+
+#gameover-message {
+	font-size: 18pt;
+}
+
+#gameover a {
+	font-size: 10pt;
+}

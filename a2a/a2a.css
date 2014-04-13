@@ -1,0 +1,217 @@
+/* global settings, including font, background color, removal of margins, and IE hover fix */
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0px;
+	font-family: Trebuchet MS, Verdana, Helvetica, sans-serif;
+	font-size: 10pt;
+	background: #ffffff;
+	behavior:url('/csshover.htc');
+	height: 100%;
+	width: 100%;
+}
+
+a {
+	color: #1E9EFF;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.logo {
+	text-align:left;
+	background: #00487d;
+	width: 731px;
+}
+
+.layout-leftbar {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	width: 10px;
+}
+
+.layout-rightbar {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	width: 10px;
+}
+
+.layout-center {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 10px;
+	right: 10px;
+	text-align: center;
+	background: #ffffff;
+	padding: 0px;
+	/*height: 100%;*/
+}
+
+.layout-footer {
+	clear: both;
+	text-align:center;
+	width:100%;
+	font-size:9pt;
+}
+
+.box-logo {
+	width: 100%;
+	text-align: center;
+}
+
+/* IE png fix! */
+img, input {
+	behavior:url('/iepngfix.htc');
+}
+
+/* the "blocks" for each page item */
+.block {
+	background: url('images/block_top.gif') no-repeat 66% 0% #e1f2ff;
+	/*clear: both;*/
+	margin: 10px;
+	margin-bottom: 0px;
+	padding-top: 10px;
+	max-width: 900px;
+}
+
+.blocknotop {
+	background: #e1f2ff;
+	/*clear: both;*/
+	margin: 0px 10px;
+	padding-top: 10px;
+	max-width: 900px;
+}
+
+/* the bottom border graphic for blocks */
+.block .bottom, .blocknotop .bottom {
+	background: url('images/block_bottom.gif') no-repeat 15% 0%;
+	height: 64px;
+}
+
+.block-transparent {
+	background: url('images/block_top.png') no-repeat 66% 0%;
+	/*clear: both;*/
+	margin: 0px;
+	padding-top: 10px;
+	max-width: 900px;
+}
+
+.bottom-transparent {
+	background: url('images/block_bottom.png') no-repeat 15% 0%;
+	height: 64px;
+}
+
+/* fix for IE, which likes to put a random blank line below forms */	
+form {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* The help menu at the top of the screen */
+.helpbar {
+	background: #80c9ff;
+	padding: 2px;
+	margin: 10px;
+	clear: both;
+	text-align: center;
+	display: inline-block;
+}
+
+.helpbar a {
+	color: #007BD5;
+}
+
+.linkcontainer {
+	background:url('/images/title_bottom_border.png') no-repeat;
+	height: 36px;
+	position: relative;
+}
+
+/* Special formats for the top block with game links */
+.linkblock {
+	position: absolute;
+	left: 406px;
+	bottom: 5px;
+	background: url('images/menu_bg.png');
+	width: 297px;
+	height: 72px;
+}
+
+.links {
+	position: absolute;
+	top: 15px;
+	left: 20px;
+}
+
+.links a img {
+	padding: 10px 5px;
+}
+
+.links a:hover img {
+	background: url('images/link_hover_bg.png') no-repeat 50% 50%;
+}
+
+.error_message {
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 1em;
+	margin: 10px;
+	clear: both;
+	background: #ffedd4;
+	font-size: 10pt;
+	padding: 2px;
+}
+
+.button {
+	font-family: Screwball, Trebuchet MS, sans-serif;
+	font-size: 30px;
+	color: #ffffff;
+	background: #ff7f00;
+	padding: 0px 5px;
+	display: inline-block;
+	clear:both;
+	cursor: pointer;
+}
+
+.button:hover {
+	background: #b35900;
+}
+
+.button.disabled {
+	background: #52504d;
+	cursor: default;
+	color: #aba8a1;
+}
+
+.button.disabled:hover {
+	background: #52504d;
+}
+
+@font-face {
+  font-family: "Screwball";
+  src: url(/screwbal-webfont.eot);
+}
+
+@font-face {
+	font-family: Screwball;
+	src: url('/screwball.ttf') format("opentype");
+}
+
+.dialog {
+	z-index: 1002;
+	display: none;
+	position: absolute;
+	top: 60px;
+	left: 200px;
+	height: auto;
+	width: 550px;
+}

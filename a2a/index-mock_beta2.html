@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Dangerous Apples</title>
+	<meta http-equiv="content-type"
+		content="text/html;charset=utf-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<link href="a2a_beta2.css" type="text/css" rel="stylesheet" />
+	<link href="a2a_index_beta2.css" type="text/css" rel="stylesheet" />
+	<script src="ajax_lib.js" type="text/javascript"></script>
+	<script src="a2a_game.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<div style="text-align:center">
+		<img src="/images/a2a_logo_beta.png" />
+
+		<div><span class="helpbar">
+			Welcome to <b>Dangerous Apples!</b>
+		</span></div>
+
+		<div align="center">
+
+			<table align="center" cellspacing="3" cellpadding="0" style="margin: 1em; text-align: center;">
+				<tr valign="top" align="left">
+					<td class="block">
+						<div class="blockheader">Create a new game</div>
+						<form action="game.php" method="post" id="createform">
+							<div class="formfield">
+								<label for="name">Your name</label>
+								<input id="name" type="text" name="name" size="20" maxlength="20" class="text" />
+							</div>
+							<div class="formfield">
+								<label for="room_name">Room name</label>
+								<input id="room_name" type="text" name="room_name" size="30" maxlength="100" class="text" />
+							</div>
+							<div class="formfield">
+								<label for="rounds">Rounds</label>
+								<input id="rounds" type="text" name="rounds" size="5" class="text" value="20" onblur="this.value=Math.abs(parseInt(this.value));if(isNaN(this.value) || this.value==0)this.value=20;" />
+							</div>
+							<div class="formfield">
+								<label for="private">Private?</label>
+								<select id="private" name="private" style="float:left;margin-left: 1px; margin-top: 4px;">
+									<option value="1">Yes</option>
+									<option value="0">No</option>
+								</select>
+								<label for="password">Password</label>
+								<input id="password" type="password" name="password" size="12" maxlength="20" class="text" />
+							</div>
+							<div class="formfield">
+								<label for="max_players">Max Players</label>
+								<input id="max_players" type="text" name="max_players" size="5" class="text" value="12" onblur="this.value=Math.abs(parseInt(this.value));if(isNaN(this.value) || this.value==0)this.value=12;" />
+							</div>
+							<div style="text-align:center;clear:both;">
+								<input type="image" name="create" value="Create" src="images/create_button.png" onmouseover="this.src='/images/create_button_hl.png';" width="77" height="30" onmouseout="this.src='/images/create_button.png';" />
+							</div>
+						</form>
+					</td>
+					<td class="or_text" valign="top">
+						<img src="/images/or_text.png"/>
+					</td>
+					<td class="block">
+						<div class="blockheader">Join an existing game</div>
+						<form action="join-game.php" method="post">
+							<table cellspacing="0" cellpadding="3" width="100%" height="100%">
+								<tr>
+									<td colspan="2" align="center"><label for="join_name">Your name</label> <input type="text" class="text" id="join_name" name="name" size="20" maxlength="20" /></td>
+								</tr>
+								<tr valign="top">
+									<td align="right">
+										<label for="roomid">Choose a game</label>
+										<br style="clear:both;">
+										<select id="roomid" name="roomid" size="8">
+											<option>House O' Cards</option>
+											<option>House O' Cards</option>
+											<option>House O' Cards</option>
+											<option>House O' Cards</option>
+											<option>House O' Cards</option>
+											<option>House O' Cards</option>
+										</select><br/>
+										<label for="password">Password</label>
+										<input type="password" class="text" name="password" size="10" />
+									</td>
+									<td>
+										<div class="roominfo">
+											<div class="roominfoheader">Room Info</div>
+											<div id="roominfo">
+												<div>Creator: Bob</div>
+												<div>Private</div>
+												<div>Max Players: 20</div>
+												<div>Number of rounds: 12</div>
+											</div>
+											<div class="roominfoheader">Player List</div>
+											<div id="playerlist">
+												<div class="playername">jsfdlkj</div>
+												<div class="playername">jasdlkf</div>
+												<div class="playername">ajsdfj</div>
+												<div class="playername">12345678901234567890</div>
+												<div class="playername">jsfdlkj</div>
+												<div class="playername">jasdlkf</div>
+												<div class="playername">ajsdfj</div>
+												<div class="playername">12345678901234567890</div>
+												<div class="playername">jsfdlkj</div>
+												<div class="playername">jasdlkf</div>
+												<div class="playername">ajsdfj</div>
+												<div class="playername">12345678901234567890</div>
+												<div class="playername">jsfdlkj</div>
+												<div class="playername">jasdlkf</div>
+												<div class="playername">ajsdfj</div>
+												<div class="playername">12345678901234567890</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" align="center">
+										<input type="image" name="join" value="Join" src="images/join_button.png" onmouseover="this.src='/images/join_button_hl.png';" width="77" height="30" onmouseout="this.src='/images/join_button.png';" />
+									</td>
+								</tr>
+							</table>
+						</form>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="3" class="linkblock">
+						<table width="100%">
+							<tr align="center">
+								<td><a href="#">About</a></td>
+								<td><a href="#">How to Play</a></td>
+								<td><a href="#">FAQ</a></td>
+								<td><a href="#">Contact</a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+</body>
+</html>

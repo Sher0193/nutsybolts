@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Apples to AJAX</title>
+	<meta http-equiv="content-type"
+		content="text/html;charset=utf-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<link href="a2a.css" rel="stylesheet" type="text/css" />
+	<link href="a2a_game.css" rel="stylesheet" type="text/css" />
+	<script src="a2a_game.js" type="text/javascript"></script>
+	<script src="ajax_lib.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		// set variables here (room id, username, password, judge order)
+	</script>
+</head>
+
+<body onload="document.messagebar.message.focus();" onclick="document.messagebar.message.focus();document.messagebar.message.value=document.messagebar.message.value;">
+
+    <div id="leftborder"></div>
+	<div id="rightborder"></div>
+
+	<div style="position: absolute; top:0px; left:100px; right: 100px; bottom: 0px;text-align:center;">
+
+		<div align="center">
+			<div class="apple_header">
+				<span class="apple_logo" style="float:left;"></span>
+				<span class="apple_logo" style="float:right;"></span>
+			</div>
+		</div>
+
+		<div style="height: 60%;max-height:60%;">
+			<div class="table_container" id="chatareacontainer">
+				<div class="apple_table">
+					<div class="table_header">
+						<span class="th_left"></span>
+						<span class="th_right"></span>
+						<div class="th_text">Chat Window</div>
+					</div>
+					<div class="table_body" style="height:400px; min-height: 400px;max-height: 400px;">
+						<div id="chatwindow" style="min-height: 400px;height: 400px; max-height: 400px;">
+							<div id="message">Lorem ipsum dolor sit amet</div>
+						</div>
+					</div>
+					<div class="text_footer">
+						<form onsubmit="return postMessage();" name="messagebar">
+							<div class="text_left"></div>
+							<div class="text_right"><input type="image" src="images/send_button.png" name="send" value="Send!" height="29" width="55" onmouseover="this.src='/images/send_button_hl.png';" onmouseout="this.src='/images/send_button.png';" /></div>
+							<div class="message_container"><input type="text" name="message" class="message_input" tabindex="0" /></div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="table_container" id="playerlistcontainer">
+				<div class="apple_table">
+					<div class="table_header">
+						<span class="th_left"></span>
+						<span class="th_right"></span>
+						<div class="th_text">Player List</div>
+					</div>
+					<div class="table_body" style="height:100%;">
+						<div id="playerlist">
+							<div class="player1">
+								<div class="playericon"></div>
+								<div class="playername">Bob</div>
+								<div class="playerscore">1</div>
+								<div class="playermute"><img id="mutebulb0" src="images/mutebulb_on.png" onclick="mute(0);" /></div>
+							</div>
+							<div class="player2" id="active">
+								<div class="playericon"></div>
+								<div class="playername">Bob</div>
+								<div class="playerscore">1</div>
+								<div class="playermute"><img id="mutebulb1" src="images/mutebulb_on.png" onclick="mute(1);" /></div>
+							</div>
+							<div class="player1">
+								<div class="playericon"><img src="images/gavel.png" /></div>
+								<div class="playername">Bob</div>
+								<div class="playerscore">1</div>
+								<div class="playermute"><img id="mutebulb2" src="images/mutebulb_on.png" onclick="mute(2);" /></div>
+							</div>
+							<div class="player2">
+								<div class="playericon"></div>
+								<div class="playername">Bob</div>
+								<div class="playerscore">1</div>
+								<div class="playermute"><img id="mutebulb3" src="images/mutebulb_on.png" onclick="mute(3);" /></div>
+							</div>
+						</div>
+						<form name="awayform" onsubmit="return false;">
+							<div id="away_message" style="visibility: hidden;">You are away now.<br/>You cannot play cards or act as the judge.<br/>Use the button below to return from away.</div>
+							<input style="display: inline;" type="image" id="awaybutton" value="I'm Away" src="images/away_button.png" height="30" width="77" onmouseover="this.src='/images/away_button_hl.png';" onmouseout="this.src='/images/away_button.png';" onclick="goAway();" />
+							<input style="display: none;" type="image" id="backbutton" value="Back" src="images/back_button.png" height="30" width="77" onmouseover="this.src='/images/back_button_hl.png';" onmouseout="this.src='/images/back_button.png';" onclick="comeBack();" />
+						</form>
+					</div>
+					<div class="table_footer">
+						<span class="tf_left"></span>
+						<span class="tf_right"></span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div style="height: 20%;min-height: 20%;">
+
+			<div class="table_container" id="handcontainer">
+				<div class="apple_table">
+					<div class="table_header">
+						<span class="th_left"></span>
+						<span class="th_right"></span>
+						<div class="th_text">Your Hand</div>
+					</div>
+					<div class="table_body">
+						<div class="hand_heading" id="hand_heading">
+							Choose the best answer for <div id="hand_greencard">hungry</div>
+						</div>
+
+						<div class="hand_cards" id="hand_cards">
+							<div class="hand_card" onclick="playCard(this);"><div class="card_caption">Swamp Gas</div></div>
+							<div class="hand_card" onclick="playCard(this);"><div class="card_caption">England</div></div>
+							<div class="hand_card" onclick="playCard(this);"><div class="card_caption">Dirty Socks</div></div>
+							<div class="hand_card" onclick="playCard(this);"><div class="card_caption">Roger Rabbit</div></div>
+							<div class="hand_card" onclick="playCard(this);"><div class="card_caption">Pigs</div></div>
+							<div class="hand_card" onclick="playCard(this);"><div class="card_caption">Harry Potter</div></div>
+							<div class="hand_card" onclick="playCard(this);"><div class="card_caption">Dixie Chicks</div></div>
+						</div>
+
+						<div class="hand_descriptions">
+							<a href="http://en.wikipedia.org/wiki/Swamp Gas" target="_blank">look it up</a>
+							<a href="http://en.wikipedia.org/wiki/England" target="_blank">look it up</a>
+							<a href="http://en.wikipedia.org/wiki/Dirty Socks" target="_blank">look it up</a>
+							<a href="http://en.wikipedia.org/wiki/Roger Rabbit" target="_blank">look it up</a>
+							<a href="http://en.wikipedia.org/wiki/Pigs" target="_blank">look it up</a>
+							<a href="http://en.wikipedia.org/wiki/Harry Potter" target="_blank">look it up</a>
+							<a href="http://en.wikipedia.org/wiki/Dixie Chicks" target="_blank">look it up</a>
+						</div>
+					</div>
+					<div class="table_footer">
+						<span class="tf_left"></span>
+						<span class="tf_right"></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="table_container" id="judgecontainer">
+				<div class="apple_table">
+					<div class="table_header">
+						<span class="th_left"></span>
+						<span class="th_right"></span>
+						<div class="th_text">Judge&nbsp;Window</div>
+					</div>
+					<div class="table_body">
+						<input type="button" value="0" onclick="setJudgeStatus(0);" />
+						<input type="button" value="1" onclick="setJudgeStatus(1);" />
+						<input type="button" value="2" onclick="setJudgeStatus(2);" />
+
+						<div id="judge_active" style="display: block;">
+							<div class="judge_heading">
+								You are the judge this turn!
+								<div id="judge_notready" style="display:none;">Please wait for all players to play their cards.</div>
+								<div id="judge_vote" style="display:block;">Choose the best answer for <div id="judge_greencard">hungry</div></div>
+							</div>
+
+							<form name="judge_form" style="text-align:center;" onsubmit="alert('judge!'); return false;">
+								<div style="padding: 2px;">
+								<select name="answer" size="5">
+									<option>Beavers</option>
+									<option>Dolph Lundgren</option>
+									<option>Donuts</option>
+									<option>Me</option>
+									<option>Wookiees</option>
+								</select>
+								</div>
+								<div style="padding:2px;">
+									<input type="image" name="vote" value="Vote" src="images/ok_button.png" height="30" width="77" onmouseover="this.src='/images/ok_button_hl.png';" onmouseout="this.src='/images/ok_button.png';">
+								</div>
+							</form>
+						</div>
+						<div id="judge_inactive" style="display: none;">
+							<div class="judge_heading"><div id="judge_name">Bob</div> is the judge this turn.</div>
+						</div>
+					</div>
+					<div class="table_footer">
+						<span class="tf_left"></span>
+						<span class="tf_right"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

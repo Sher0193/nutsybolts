@@ -1,0 +1,245 @@
+.welcome {
+	font-size: 18px;
+	padding: 5px 10px;
+	text-align: left;
+}
+
+input.text {
+	border: solid 1px #aba8a1;
+	background: #ffffff;
+	font-size: 12pt;
+	font-family: Trebuchet MS, Verdana, Helvetica, sans-serif;
+	margin-top: 2px;
+}
+
+input.text.invalid {
+	border-color: #ff8000;
+}
+
+.block > .header, .block-transparent .header {
+	font: 30pt Screwball, Trebuchet MS, sans-serif;
+	text-align: center;
+}
+
+label {
+	text-align: right;
+}
+
+#div-create label {
+	float: left;
+	padding-right: 2px;
+	margin-top: 5px;
+	width: 12em;
+}
+
+.postfield {
+	margin-top: 5px;
+	margin-left: 5px;
+	display: inline-block;
+}
+
+div.formfield {
+	clear: both;
+	padding-top: 10px;
+	text-align: left;
+}
+
+div.formfield input {
+	//float: left;
+	text-align: left;
+}
+
+div.buttonfield {
+	clear: both;
+}
+
+div.buttonfield input {
+	float: left;
+	margin-left: 12em;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+.formbg {
+	background: #e1f2ff;
+	padding: 3px;
+}
+
+.invalid_text {
+	color: #ff8000;
+	font-size: 10pt;
+	font-style: italic;
+	margin-top: 2px;
+	padding-left: 10px;
+	display: none;
+}
+
+#background {
+	background-color: black;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 3;
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+.optionheader {
+	padding-top: 5px;
+	font-size: 16pt;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+.tutorial img {
+	border: 1px solid #54504C;
+}
+
+.modal {
+	font-size: 14pt;
+	font-weight: bold;
+	padding: 4px;
+}
+
+#tablist {
+	text-align: left;
+	font-family: Screwball, Trebuchet MS, sans-serif;
+	font-size: 30pt;
+}
+
+.optionselector {
+	font-family: Screwball, Trebuchet MS, sans-serif;
+	font-size: 17pt;
+	color: #ffffff;
+	margin: 5px 5px;
+}
+
+.optionselector span {
+	display: inline-block;
+	padding: 2px 15px;	
+	margin: 0px -5px;
+}
+
+.optionselector span {
+	cursor: pointer;
+}
+
+.optionselector span.selected:hover, .optionselector span.unselected:hover {
+	background: #2F95FF;
+}
+
+.optionselector span.selected {
+	background: #00487D;
+}
+
+.optionselector span.unselected {
+	background: #80C9FF;
+}
+
+#room_list {
+	overflow: auto;
+	border: solid 1px #aba8a1;
+	margin: 10px;
+	height: 250px;
+	background: #ffffff;
+}
+
+#tablist {
+	margin-left: 10px;
+}
+
+.tab {
+	font-family: Screwball, Trebuchet MS, sans-serif;
+	font-size: 35px;
+	width: 267px;
+	height: 50px;
+	text-align: center;
+	display: inline-block;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	line-height: 50px;
+}
+
+.tab.selected {
+	background-image: url('/images/tab_selected.png');
+	color: #000000;
+}
+
+.tab.unselected {
+	background-image: url('/images/tab_unselected.png');
+	color: #ffffff;
+}
+
+.room {
+	text-align: left;
+	min-height: 4.5em;
+	background-color: #e1f2ff;
+	margin: 10px;
+	padding: 5px;
+}
+
+.room .title {
+	font-family: Screwball, Trebuchet MS, sans-serif;
+	font-size: 25px;
+}
+
+.room .joinform {
+	width: 30%;
+	float: right;
+	display: inline-block;
+	text-align: right;
+}
+
+.room .joinform .private {
+	height: 2em;
+}
+
+.room .playerlist {
+	font-size: 8pt;
+	font-family: Trebuchet MS, sans-serif;
+	width: 70%;
+}
+
+.room .playerlist .header {
+	font-weight: bold;
+	display: inline;
+}
+
+#social-widgets {
+	position: absolute;
+	right: 0px;
+	width: 292px; 
+	text-align: center;
+}
+
+.text.empty {
+	background: url('/images/passwordhint.png') #ffffff no-repeat;
+}
+
+#deckname {
+	font-weight: bold;
+	display: inline-block;
+	padding-top: 5px;
+}
+
+#textarea-nouns {
+	width: 500px;
+	height: 300px;
+	text-align: left;
+}
+
+#gamedeck-nouns {
+	height: 300px;
+	overflow: auto;
+	white-space: pre;
+	text-align: left;
+	background: white;
+	margin: 0px 10px;
+	padding-left: 5px;
+	border: 1px solid #ABA8A1;
+}
