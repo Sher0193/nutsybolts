@@ -28,7 +28,7 @@ class Database {
 		}
 	}
 	
-	function Database($host, $username, $pw, $database) {
+	function __construct($host, $username, $pw, $database) {
 		$this->host = $host;
 		$this->username = $username;
 		$this->password = $pw;
@@ -36,12 +36,12 @@ class Database {
 	}
 	
 	function dbconnect() {
-		$this->connection = mysql_pconnect($this->host, $this->username, $this->password);
+		$this->connection = new mysqli($this->host, $this->username, $this->password);
 		if (!$this->connection) {
 			$this->logError();
 			return false;
 		}
-		mysql_select_db($this->dbname, $this->connection);
+		$this->connection->select_db($this->dbname);
 		return true;
 	}
 	
@@ -51,15 +51,15 @@ class Database {
 		for ($i = 1; $i < count($pieces); $i++) {
 			$type = gettype($params[$i - 1]);
 			if ($type == 'string')
-				$params[$i - 1] = "'" . mysql_real_escape_string($params[$i - 1]) . "'";
+				$params[$i - 1] = "'" . $this->connection->real_escape_string($params[$i - 1]) . "'";
 			$sql = $sql . $params[$i - 1] . $pieces[$i];
 		}
 		
 		//$sql = str_replace('?', "'%s'", $sql);
 		//$sql = vsprintf($sql, $params);
 		
-		$rs = mysql_query($sql, $this->connection);
-		if (mysql_errno($this->connection)) {
+		$rs = $this->connection->query($sql);
+		if (mysqli_errno($this->connection)) {
 			$this->logError($sql);
 		}
 		return new ResultSet($rs);
@@ -67,18 +67,18 @@ class Database {
 	
 	function logError($sql = '') {
 		if (!$sql)
-			error_log("MySQL error: " . mysql_error($this->connection));
+			error_log("MySQL error: " . mysqli_error($this->connection));
 			
 		else
-			error_log("MySQL error on $sql: " . mysql_error($this->connection));
+			error_log("MySQL error on $sql: " . mysqli_error($this->connection));
 	}
 	
 	function errormsg() {
-		return mysql_error($this->connection);
+		return mysqli_error($this->connection);
 	}
 	
 	function insert_id() {
-		return mysql_insert_id($this->connection);
+		return mysqli_insert_id($this->connection);
 	}
 	
 	function starttrans() {
@@ -90,44 +90,52 @@ class Database {
 	}
 	
 	function getAffectedRows() {
-		return mysql_affected_rows($this->connection);
+		return mysqli_affected_rows($this->connection);
 	}
 }
 
 class ResultSet {
 	var $result;
 	
-	function ResultSet($result) {
+	function __construct($result) {
 		$this->result = $result;
 	}
 	
 	function getRowsAssoc() {
+        if (!$this->result)
+            return;
 		$rows = array();
-		while ($row = mysql_fetch_assoc($this->result))
+		while ($row = mysqli_fetch_assoc($this->result))
 			$rows[] = $row;
 			
-		mysql_free_result($this->result);
+		mysqli_free_result($this->result);
 		return $rows;
 	}
 	function getRowsNumeric() {
+        if (!$this->result)
+            return;
 		$rows = array();
-		while ($row = mysql_fetch_array($this->result))
+		while ($row = mysqli_fetch_array($this->result))
 			$rows[] = $row;
 			
-		mysql_free_result($this->result);
+		mysqli_free_result($this->result);
 		return $rows;
 	}
 	
 	function getRowAssoc() {
-		$row = mysql_fetch_assoc($this->result);
+        if (!$this->result)
+            return;
+		$row = mysqli_fetch_assoc($this->result);
 		if (!$row)
-			mysql_free_result($this->result);
+			mysqli_free_result($this->result);
 		return $row;
 	}
 	function getRowNumeric() {
-		$row = mysql_fetch_array($this->result);
+        if (!$this->result)
+            return;
+		$row = mysqli_fetch_array($this->result);
 		if (!$row)
-			mysql_free_result($this->result);
+			mysqli_free_result($this->result);
 		return $row;
 	}
 }

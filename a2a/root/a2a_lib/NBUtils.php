@@ -41,7 +41,7 @@ class NBUtils {
 			
 		return $color;
 	}
-	
+	/*
 	public static function encrypt($text) {
 		return trim(base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, ENCRYPTION_KEY, $text, MCRYPT_MODE_ECB, mcrypt_create_iv(mcrypt_get_iv_size(MCRYPT_RIJNDAEL_256, MCRYPT_MODE_ECB), MCRYPT_RAND))));
     }
@@ -49,7 +49,7 @@ class NBUtils {
 	public static function decrypt($text) {
 		return trim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, ENCRYPTION_KEY, base64_decode($text), MCRYPT_MODE_ECB, mcrypt_create_iv(mcrypt_get_iv_size(MCRYPT_RIJNDAEL_256, MCRYPT_MODE_ECB), MCRYPT_RAND)));
     }
-    
+    */
     public static function raiseError($error_code) {
     	header('Location: /index.php?status=' . $error_code);
 		exit;

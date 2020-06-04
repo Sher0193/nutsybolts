@@ -18,8 +18,8 @@
 -- Create schema a2a
 --
 
-CREATE DATABASE IF NOT EXISTS a2a;
-USE a2a;
+/*CREATE DATABASE IF NOT EXISTS a2a;
+USE a2a;*/
 
 --
 -- Definition of table `chatlog`
