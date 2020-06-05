@@ -346,6 +346,9 @@ class Room {
 	}
 
 	function addPlayer($name, $ip, $creator) {
+        if (DEBUG) {
+            $ip = "0.0.0.0";
+        }
 		// process the name and IP address for potential SQL issues
 		$name = addslashes(strip_tags($name));
 		if (!preg_match('/^\d+\.\d+\.\d+\.\d+$/', $ip)) return false;

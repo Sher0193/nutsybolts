@@ -57,7 +57,7 @@ class Player {
 		
 		$text = $this->id . ' ' . $this->password;
 		//overkill much?  nah.
-		$encrypt = hash('md5', $text);
+		$encrypt = NBUtils::encrypt($text);
 		return $encrypt;
 	}
 	function isDeleted() { return $this->deleted; }
