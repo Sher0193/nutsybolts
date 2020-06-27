@@ -1,6 +1,6 @@
 <?php
 
-require_once ('..\lib\adodb5\adodb.inc.php');
+require_once (LIB_DIR . '/adodb5/adodb.inc.php');
 
 $db = NewADOConnection('mysql');
 $db->pconnect('localhost','a2a','d#$d&tr##','a2a');
