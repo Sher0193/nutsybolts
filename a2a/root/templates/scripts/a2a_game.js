@@ -181,6 +181,7 @@ function displayTableCard(order, name) {
 	'</div>')
 		.appendTo('#table_cards')
 		.fadeIn('slow'); //, function() { testShuffleCards(order); } );
+		Console.log("Hmmmm");
 }
 
 function switchToJudge() {

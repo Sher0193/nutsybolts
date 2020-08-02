@@ -1,4 +1,4 @@
-{if $page == 'landing' || $page == 'game'}
+{if $page === 'landing' || $page === 'game'}
 	{assign var=script value='game'}
 {else}
 	{assign var=script value='index'}
