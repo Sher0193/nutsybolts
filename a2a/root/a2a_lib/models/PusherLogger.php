@@ -1,7 +1,7 @@
 <?php
 
 require_once(LIB_DIR . 'LockManager.php');
-require_once(MODEL_DIR . 'Pusher.php');
+require_once('/home/dylan/Documents/pusher/vendor/autoload.php');
 
 class PusherLogger {
 	private $room_id;
@@ -10,7 +10,7 @@ class PusherLogger {
 		
 	function __construct($room_id) {
 		$this->room_id = $room_id;
-		$this->pusher = new Pusher(PUSHER_APP_KEY, PUSHER_APP_SECRET, PUSHER_APP_ID);
+		$this->pusher = new Pusher\Pusher(PUSHER_APP_KEY, PUSHER_APP_SECRET, PUSHER_APP_ID);
 		$this->lock_manager = new LockManager($room_id);
 	}
 	

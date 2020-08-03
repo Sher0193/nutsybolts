@@ -3,7 +3,7 @@
 require_once('./config.php');
 require_once(MODEL_DIR . 'Player.php');
 require_once(LIB_DIR . 'Authenticator.php');
-require_once(MODEL_DIR . 'Pusher.php');
+require_once('/home/dylan/Documents/pusher/vendor/autoload.php');
 
 $socket_id = $_POST['socket_id'];
 $channel_name = $_POST['channel_name'];
@@ -35,7 +35,7 @@ $player_data = array(
 	'j' => $player->getJudgeOrder()
 );
 
-$pusher = new Pusher(PUSHER_APP_KEY, PUSHER_APP_SECRET, PUSHER_APP_ID);
+$pusher = new Pusher\Pusher(PUSHER_APP_KEY, PUSHER_APP_SECRET, PUSHER_APP_ID);
 print $pusher->presence_auth($channel_name, $socket_id, $player_id, $player_data);
 
 ?>
