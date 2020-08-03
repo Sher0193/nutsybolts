@@ -1,7 +1,7 @@
 <?php
 
 require_once(LIB_DIR . 'LockManager.php');
-require_once('/home/dylan/Documents/pusher/vendor/autoload.php');
+require_once(LIB_DIR . 'pusher/vendor/autoload.php');
 
 class PusherLogger {
 	private $room_id;

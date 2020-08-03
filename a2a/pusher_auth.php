@@ -3,7 +3,7 @@
 require_once('./config.php');
 require_once(MODEL_DIR . 'Player.php');
 require_once(LIB_DIR . 'Authenticator.php');
-require_once('/home/dylan/Documents/pusher/vendor/autoload.php');
+require_once(LIB_DIR .'pusher/vendor/autoload.php');
 
 $socket_id = $_POST['socket_id'];
 $channel_name = $_POST['channel_name'];
